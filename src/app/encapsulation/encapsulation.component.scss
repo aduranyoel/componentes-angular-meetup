@@ -1,0 +1,7 @@
+@use '../styles/variables' as *;
+
+:host {
+  display: grid;
+  gap: 16px;
+  margin: 80px auto;
+}

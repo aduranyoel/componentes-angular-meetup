@@ -1,0 +1,21 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+:host {
+  padding: 20px;
+  @include mixins.dashed();
+  min-width: 220px;
+  max-width: 360px;
+  color: variables.$color;
+  background: variables.$background;
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    button {
+      width: 100%;
+    }
+  }
+}

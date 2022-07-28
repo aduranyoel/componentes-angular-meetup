@@ -1,0 +1,11 @@
+<div class="timer">
+  <app-progress-bar [progress]="progress"></app-progress-bar>
+
+  <app-display [time]="countdown"></app-display>
+
+  <div class="buttons">
+    <button (click)="timer.toggleCountdown()" [disabled]="timer.isCountdownEnded">{{ canPlay ? 'Play' : 'Pause' }}</button>
+    <button (click)="timer.restartCountdown()">Restart</button>
+  </div>
+
+</div>

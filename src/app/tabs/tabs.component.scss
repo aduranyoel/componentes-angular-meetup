@@ -1,0 +1,35 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins';
+
+:host {
+  width: 100%;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+
+    li {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 12px;
+      font-weight: 600;
+      color: $color;
+      opacity: 0.5;
+
+      &.active {
+        border-bottom: 4px solid rgb(71, 207, 237);
+        opacity: 1;
+      }
+
+      &:hover:not(.active) {
+        @include mixins.blueHover(none);
+      }
+    }
+  }
+
+  .content {
+    margin: 80px auto 0;
+  }
+}
+

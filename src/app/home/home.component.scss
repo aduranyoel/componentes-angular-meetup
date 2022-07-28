@@ -1,0 +1,20 @@
+@use '../styles/variables' as *;
+
+:host {
+  .timers-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .add {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,13 @@
+@use './variables';
+
+@mixin dashed {
+  border: 1px dashed variables.$color;
+}
+
+@mixin blueHover($border: solid) {
+  border-style: $border;
+  border-color: rgb(71, 207, 237);
+  color: rgb(71, 207, 237);
+  background: rgb(48, 52, 53);
+  cursor: pointer;
+}

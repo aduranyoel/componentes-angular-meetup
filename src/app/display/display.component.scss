@@ -1,0 +1,14 @@
+:host{
+    font-size: 4em;
+    display: flex;
+}
+
+div:first-of-type{
+    flex: 1;
+    text-align: right;
+}
+
+div:last-of-type{
+    flex: 1;
+    text-align: left;
+}
