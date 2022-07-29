@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit, AfterContentInit, AfterViewInit {
   }
 
   public showEndTimerAlert() {
+    this.alertContainer.clear();
     const simpleAlertComponentRef = this.alertContainer.createComponent(SimpleAlertViewComponent);
 
     simpleAlertComponentRef.instance.title = 'timer ended';

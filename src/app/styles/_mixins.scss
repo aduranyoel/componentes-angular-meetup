@@ -6,8 +6,8 @@
 
 @mixin blueHover($border: solid) {
   border-style: $border;
-  border-color: rgb(71, 207, 237);
-  color: rgb(71, 207, 237);
+  border-color: variables.$skyBlue;
+  color: variables.$skyBlue;
   background: rgb(48, 52, 53);
   cursor: pointer;
 }

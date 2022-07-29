@@ -28,7 +28,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   private _destroy: Subject<void> = new Subject();
 
   get progress() {
-    console.log('getting progress');
+    // console.log('getting progress');
     return (this.init - this.countdown) / this.init * 100;
   }
 

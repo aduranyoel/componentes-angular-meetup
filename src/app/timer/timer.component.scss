@@ -19,3 +19,6 @@
     }
   }
 }
+:host-context(.active) {
+  background-color: variables.$skyBlue;
+}

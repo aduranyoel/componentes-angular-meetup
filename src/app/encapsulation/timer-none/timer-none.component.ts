@@ -18,7 +18,7 @@ import { TimerService } from 'src/app/timer/timer.service';
   styleUrls: ['./timer-none.component.scss'],
   providers: [TimerService],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class TimerNoneComponent implements OnInit, OnDestroy {
 
